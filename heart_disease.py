@@ -1,15 +1,16 @@
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 
 df = pd.read_csv('cleveland.csv')
 
-df.columns = ['age', 'sex', 'chestPain', 'restBp', 'chol',
+columnTitle = ['age', 'sex', 'cPain', 'restBp', 'chol',
               'fbs', 'restEcg', 'maxHr', 'exang', 
               'stElev', 'slope', 'vessel', 'thal', 'target']
-
+df.columns = columnTitle
 # age: age in years
 # sex: (1 = male; 0 = female)
-# chestPain: chest pain type
+# cPain: chest pain type
 # restBp: resting blood pressure (in mm Hg on admission to the hospital)
 # chol: serum cholesterol in mg/dl
 # fbs: (fasting blood sugar > 120 mg/dl) (1 = true; 0 = false)
@@ -35,5 +36,15 @@ vesselMean = vessel.mean()
 thal.fillna(thalMean, inplace = True)
 vessel.fillna(vesselMean, inplace = True)
 
+#plotting graphs between relevant parameters to observe correlations
+
+#plotting a correlation matrix
+corrMatrix = df.corr()
+plt.matshow(corrMatrix)
+plt.xticks(range(len(corrMatrix.columns)), corrMatrix.columns, fontsize = 11,  rotation = 45);
+plt.yticks(range(len(corrMatrix.columns)), corrMatrix.columns, fontsize = 11);
+plt.colorbar()
+plt.suptitle("Correlation Matrix", fontsize = '12')
+plt.show()
 
 
