@@ -68,16 +68,21 @@ plt.suptitle("Relationship between male and female affected by heart disease", f
 sns.catplot(x = "age", y = "chol", data = df, kind = "boxen")
 plt.suptitle("Relationship between age and cholestrol levels", fontsize = '12')
 plt.axhline(y = 200, color = 'black')
-plt.show()
+#plt.show()
 
 #plot vessel by age
-vessAge = df.groupby(["age"])["vessel"].mean()
-vessAge.plot()
+vesAge = df.groupby(["age"])["vessel"].mean()
+vesAge.plot()
 plt.suptitle("Relationship between age mean of vessels affected", fontsize = '12')
 plt.ylabel("Mean blood vessels affected")
 plt.show()
 
 #plot vessel by gender
-
+vesGend = df.groupby(["sex"])["vessel"].mean()
+vesGend.plot(color = "g", kind = 'bar')
+plt.suptitle("Relationship between age mean of vessels affected", fontsize = '12')
+plt.ylabel("Mean blood vessels affected")
+plt.xticks([0, 1], ["female", "male"], rotation = 45)
+plt.show()
 
 
