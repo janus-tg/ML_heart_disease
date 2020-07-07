@@ -58,10 +58,23 @@ plt.xlabel("Age (in yrs)")
 #plt.show()
 
 #plotting a relation between male and female affected by disease
-sns.catplot(x = "sex", data = df[df["target"] == 1], kind = 'count', legend = False, palette = 'dark')
-plt.xticks([0, 1], ["female", "male"])
-sns.set_style('dark')
-plt.ylabel("Frequency")
+affByDis = df[df["target"] == 1]
+pieData = affByDis.groupby(["sex"])["target"].count()
+plt.pie(pieData, explode = [0.1, 0], labels = ["female", "male"], shadow = True)
 plt.suptitle("Relationship between male and female affected by heart disease", fontsize = '12')
+#plt.show()
+
+#plotting chol vs age
+sns.catplot(x = "age", y = "chol", data = df, kind = "boxen")
+plt.suptitle("Relationship between age and cholestrol levels", fontsize = '12')
+plt.axhline(y = 200, color = 'black')
 plt.show()
+
+#plot vessel by age
+
+
+
+#plot vessel by gender
+
+
 
