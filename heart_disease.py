@@ -71,8 +71,11 @@ plt.axhline(y = 200, color = 'black')
 plt.show()
 
 #plot vessel by age
-
-
+vessAge = df.groupby(["age"])["vessel"].mean()
+vessAge.plot()
+plt.suptitle("Relationship between age mean of vessels affected", fontsize = '12')
+plt.ylabel("Mean blood vessels affected")
+plt.show()
 
 #plot vessel by gender
 
