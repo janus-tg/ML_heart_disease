@@ -8,7 +8,9 @@ df = pd.read_csv('cleveland.csv')
 columnTitle = ['age', 'sex', 'cPain', 'restBp', 'chol',
               'fbs', 'restEcg', 'maxHr', 'exang', 
               'stElev', 'slope', 'vessel', 'thal', 'target']
+
 df.columns = columnTitle
+
 # age: age in years
 # sex: (1 = male; 0 = female)
 # cPain: chest pain type
@@ -21,7 +23,7 @@ df.columns = columnTitle
 # stElev: ST depression induced by exercise relative to rest
 # slope: the slope of the peak exercise ST segment
 # vessel: number of major vessels (0–3) colored by fluoroscopy
-# thal: thalassemia (1 = normal; 2 = fixed defect; 3 = reversible defect)
+# thal: thalassemia (3 = normal; 6 = fixed defect; 7 = reversible defect)
 # target: (1= heart disease or 0= no heart disease)
 
 #print(df.isnull().sum()) 
@@ -75,7 +77,7 @@ vesAge = df.groupby(["age"])["vessel"].mean()
 vesAge.plot()
 plt.suptitle("Relationship between age mean of vessels affected", fontsize = '12')
 plt.ylabel("Mean blood vessels affected")
-plt.show()
+#plt.show()
 
 #plot vessel by gender
 vesGend = df.groupby(["sex"])["vessel"].mean()
@@ -83,6 +85,41 @@ vesGend.plot(color = "g", kind = 'bar')
 plt.suptitle("Relationship between age mean of vessels affected", fontsize = '12')
 plt.ylabel("Mean blood vessels affected")
 plt.xticks([0, 1], ["female", "male"], rotation = 45)
-plt.show()
+#plt.show()
 
+#thal vs gender
+thalGend = df[(df["thal"] == 6 )|(df["thal"] == 7)]
+sns.catplot(y = "sex", kind = "count", hue = "thal", data = thalGend, legend = False)
+plt.suptitle("Relationship between gender and thalassemia", fontsize = '12')
+plt.xlabel("Frequency")
+plt.ylabel("Gender")
+plt.yticks([0, 1], ["female", "male"])
+plt.legend(['fixed defect', 'reversible defect'], loc = "best")
+#plt.show()
+
+#making the predictive algorithms using the scikitLearn module
+
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import confusion_matrix
+
+#1. Using a linear regression model
+
+from sklearn.linear_model import LogisticRegression
+X = df.loc[:, :"thal"]
+y = df.loc[:, "target"]
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
+reg = LogisticRegression(max_iter = 1000)
+
+#training
+reg.fit(X_train, y_train)
+
+#predicting 
+y_Pred = reg.predict(X_test)
+conMat = confusion_matrix(y_test, y_Pred)
+sns.heatmap(conMat, annot=True, annot_kws={"size": 10})
+plt.suptitle("Confusion Matrix for Logistic Regression", fontsize = '12')
+plt.xlabel("Actual")
+plt.ylabel("Predicted")
+plt.show()
 
