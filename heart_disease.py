@@ -121,5 +121,24 @@ sns.heatmap(conMat, annot=True, annot_kws={"size": 10})
 plt.suptitle("Confusion Matrix for Logistic Regression", fontsize = '12')
 plt.xlabel("Actual")
 plt.ylabel("Predicted")
+#plt.show()
+
+#2. SVM
+from sklearn import svm
+
+#create a classifier
+clf = svm.SVC(kernel = "linear")
+
+#training
+clf.fit(X_train, y_train)
+
+#predicting
+y_pred = clf.predict(X_test)
+conMat = confusion_matrix(y_test, y_pred)
+sns.heatmap(conMat, annot=True, annot_kws={"size": 10})
+plt.suptitle("Confusion Matrix for Support Vector Machines", fontsize = '12')
+plt.xlabel("Actual")
+plt.ylabel("Predicted")
 plt.show()
 
+#3. 
