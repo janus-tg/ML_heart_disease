@@ -117,7 +117,7 @@ reg.fit(X_train, y_train)
 #predicting 
 y_Pred = reg.predict(X_test)
 conMat = confusion_matrix(y_test, y_Pred)
-sns.heatmap(conMat, annot=True, annot_kws={"size": 10})
+sns.heatmap(conMat, annot = True, annot_kws = {"size": 10})
 plt.suptitle("Confusion Matrix for Logistic Regression", fontsize = '12')
 plt.xlabel("Actual")
 plt.ylabel("Predicted")
@@ -135,10 +135,47 @@ clf.fit(X_train, y_train)
 #predicting
 y_pred = clf.predict(X_test)
 conMat = confusion_matrix(y_test, y_pred)
-sns.heatmap(conMat, annot=True, annot_kws={"size": 10})
+sns.heatmap(conMat, annot = True, annot_kws = {"size": 10})
 plt.suptitle("Confusion Matrix for Support Vector Machines", fontsize = '12')
+plt.xlabel("Actual")
+plt.ylabel("Predicted")
+#plt.show()
+
+#3. Naive Bayes
+from sklearn.naive_bayes import GaussianNB
+
+#creating the model
+model = GaussianNB()
+
+#training
+model.fit(X_train, y_train)
+
+#predicting
+y_pred = model.predict(X_test)
+conMat = confusion_matrix(y_test, y_pred)
+sns.heatmap(conMat, annot = True, annot_kws = {"size": 10})
+plt.suptitle("Confusion Matrix for Naive Bayes", fontsize = '12')
 plt.xlabel("Actual")
 plt.ylabel("Predicted")
 plt.show()
 
-#3. 
+#4. Decision Tree
+from sklearn.tree import DecisionTreeClassifier
+
+#creating the model
+clf = DecisionTreeClassifier()
+
+# training
+clf = clf.fit(X_train, y_train)
+
+#predicting
+y_pred = clf.predict(X_test)
+conMat = confusion_matrix(y_test, y_pred)
+sns.heatmap(conMat, annot = True, annot_kws = {"size": 10})
+plt.suptitle("Confusion Matrix for Decision Tree", fontsize = '12')
+plt.xlabel("Actual")
+plt.ylabel("Predicted")
+plt.show()
+
+
+
