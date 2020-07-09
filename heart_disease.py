@@ -115,8 +115,8 @@ reg = LogisticRegression(max_iter = 1000)
 reg.fit(X_train, y_train)
 
 #predicting 
-y_Pred = reg.predict(X_test)
-conMat = confusion_matrix(y_test, y_Pred)
+y_pred = reg.predict(X_test)
+conMat = confusion_matrix(y_test, y_pred)
 sns.heatmap(conMat, annot = True, annot_kws = {"size": 10})
 plt.suptitle("Confusion Matrix for Logistic Regression", fontsize = '12')
 plt.xlabel("Actual")
@@ -127,13 +127,13 @@ plt.ylabel("Predicted")
 from sklearn import svm
 
 #create a classifier
-clf = svm.SVC(kernel = "linear")
+sVec = svm.SVC(kernel = "linear")
 
 #training
-clf.fit(X_train, y_train)
+sVec.fit(X_train, y_train)
 
 #predicting
-y_pred = clf.predict(X_test)
+y_pred = sVec.predict(X_test)
 conMat = confusion_matrix(y_test, y_pred)
 sns.heatmap(conMat, annot = True, annot_kws = {"size": 10})
 plt.suptitle("Confusion Matrix for Support Vector Machines", fontsize = '12')
@@ -145,37 +145,57 @@ plt.ylabel("Predicted")
 from sklearn.naive_bayes import GaussianNB
 
 #creating the model
-model = GaussianNB()
+nBayes = GaussianNB()
 
 #training
-model.fit(X_train, y_train)
+nBayes.fit(X_train, y_train)
 
 #predicting
-y_pred = model.predict(X_test)
+y_pred = nBayes.predict(X_test)
 conMat = confusion_matrix(y_test, y_pred)
 sns.heatmap(conMat, annot = True, annot_kws = {"size": 10})
 plt.suptitle("Confusion Matrix for Naive Bayes", fontsize = '12')
 plt.xlabel("Actual")
 plt.ylabel("Predicted")
-plt.show()
+#plt.show()
 
 #4. Decision Tree
 from sklearn.tree import DecisionTreeClassifier
 
 #creating the model
-clf = DecisionTreeClassifier()
+decTree = DecisionTreeClassifier()
 
 # training
-clf = clf.fit(X_train, y_train)
+decTree.fit(X_train, y_train)
 
 #predicting
-y_pred = clf.predict(X_test)
+y_pred = decTree.predict(X_test)
 conMat = confusion_matrix(y_test, y_pred)
 sns.heatmap(conMat, annot = True, annot_kws = {"size": 10})
 plt.suptitle("Confusion Matrix for Decision Tree", fontsize = '12')
 plt.xlabel("Actual")
 plt.ylabel("Predicted")
+#plt.show()
+
+#calculating and plotting the importance of each variable
+
+#for logistic regression
+importance = reg.coef_[0]
+sns.barplot(x = importance, y = columnTitle[:13])
+sns.set(style="darkgrid")
+plt.suptitle("Feature importance for logistic regression")
+#plt.show()
+
+#for SVM
+importance = sVec.coef_[0]
+sns.barplot(x = importance, y = columnTitle[:13])
+sns.set(style="darkgrid")
+plt.suptitle("Feature importance for Support Vector Machine")
 plt.show()
 
-
-
+#for decision trees
+importance = decTree.feature_importances_
+sns.barplot(x = importance, y = columnTitle[:13])
+sns.set(style="darkgrid")
+plt.suptitle("Feature importance for Decision Trees")
+plt.show()
