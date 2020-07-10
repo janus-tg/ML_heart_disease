@@ -23,5 +23,5 @@ A python program which used data analysis techniques to observe trends between v
 1. Download the ```cleveland.csv``` file and ```heart_disease.py``` files.
 2. Place them inside the same folder.
 3. Open the aforementioned folder in your terminal (for MacOS and Linux) or command prompt (for Windows).
-4. Type ```python heart_disease.py```, and press enter.
+4. Type ```python heart_disease.py``` and press enter.
 
