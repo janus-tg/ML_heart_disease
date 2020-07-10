@@ -9,7 +9,7 @@ A python program which used data analysis techniques to observe trends between v
 
 ### Installation
 
-1. Install Python 3.7 or above.
+1. Install ```Python 3.7``` or above.
 2. Install these modules:
     - NumPy
     - pandas
