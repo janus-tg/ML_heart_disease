@@ -10,9 +10,9 @@ A python program which used data analysis techniques to observe trends between v
 ### Pre- installation
 
 1. Install Python 3.7 or above.
-2. Install these modules
-    * NumPy
-    * pandas
-    * matplotlib
-    * seaborn
-    * scikit-learn
+2. Install these modules:
+    - NumPy
+    - pandas
+    - matplotlib
+    - seaborn
+    - scikit-learn
