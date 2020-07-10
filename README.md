@@ -37,5 +37,5 @@ Pull requests are welcome for adding more ML models or fixing exisiting issues.
 
 ## License
 
-[MIT](https://github.com/ghosetuhin/Cryptography/blob/master/LICENSE)
+[MIT](https://github.com/janus-tg/ML_heart_disease/blob/master/LICENSE)
 
