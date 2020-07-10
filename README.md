@@ -7,7 +7,7 @@ A python program which used data analysis techniques to observe trends between v
 
 ## Setup
 
-### Pre- installation
+### Installation
 
 1. Install Python 3.7 or above.
 2. Install these modules:
