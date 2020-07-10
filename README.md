@@ -1,2 +1,2 @@
-# Using machine learning models to predict heart diesease
+# Machine learning models to predict heart diesease
 
