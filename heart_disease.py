@@ -47,7 +47,7 @@ plt.xticks(range(len(corrMatrix.columns)), corrMatrix.columns, fontsize = 11,  r
 plt.yticks(range(len(corrMatrix.columns)), corrMatrix.columns, fontsize = 11);
 plt.colorbar()
 plt.suptitle("Correlation Matrix", fontsize = '12')
-#plt.show()
+plt.show()
 
 #plotting a relationship between age and people affected by heart disease
 df['target'] = df.target.map({0: 0, 1: 1, 2: 1, 3: 1, 4: 1})
@@ -57,35 +57,35 @@ plt.legend(['No heart disease', 'Heart Disease'], loc = 1)
 plt.suptitle("Relationship between age and people affected by heart disease", fontsize = '12')
 plt.ylabel("Frequency")
 plt.xlabel("Age (in yrs)")
-#plt.show()
+plt.show()
 
 #plotting a relation between male and female affected by disease
 affByDis = df[df["target"] == 1]
 pieData = affByDis.groupby(["sex"])["target"].count()
 plt.pie(pieData, explode = [0.1, 0], labels = ["female", "male"], shadow = True)
 plt.suptitle("Relationship between male and female affected by heart disease", fontsize = '12')
-#plt.show()
+plt.show()
 
 #plotting chol vs age
 sns.catplot(x = "age", y = "chol", data = df, kind = "boxen")
 plt.suptitle("Relationship between age and cholestrol levels", fontsize = '12')
 plt.axhline(y = 200, color = 'black')
-#plt.show()
+plt.show()
 
 #plot vessel by age
 vesAge = df.groupby(["age"])["vessel"].mean()
 vesAge.plot()
-plt.suptitle("Relationship between age mean of vessels affected", fontsize = '12')
+plt.suptitle("Relationship between age and mean of vessels affected", fontsize = '12')
 plt.ylabel("Mean blood vessels affected")
-#plt.show()
+plt.show()
 
 #plot vessel by gender
 vesGend = df.groupby(["sex"])["vessel"].mean()
 vesGend.plot(color = "g", kind = 'bar')
-plt.suptitle("Relationship between age mean of vessels affected", fontsize = '12')
+plt.suptitle("Relationship between gender and mean of vessels affected", fontsize = '12')
 plt.ylabel("Mean blood vessels affected")
 plt.xticks([0, 1], ["female", "male"], rotation = 45)
-#plt.show()
+plt.show()
 
 #thal vs gender
 thalGend = df[(df["thal"] == 6 )|(df["thal"] == 7)]
@@ -95,7 +95,7 @@ plt.xlabel("Frequency")
 plt.ylabel("Gender")
 plt.yticks([0, 1], ["female", "male"])
 plt.legend(['fixed defect', 'reversible defect'], loc = "best")
-#plt.show()
+plt.show()
 
 #making the predictive algorithms using the scikitLearn module
 
@@ -117,11 +117,13 @@ reg.fit(X_train, y_train)
 #predicting 
 y_pred = reg.predict(X_test)
 conMat = confusion_matrix(y_test, y_pred)
+print("Accuracy of the logistic regression model:", (conMat[0][0] + conMat[1][1])/(conMat[0][0] + conMat[0][1] + conMat[1][0]+ conMat[1][1]) * 100)
+print()
 sns.heatmap(conMat, annot = True, annot_kws = {"size": 10})
 plt.suptitle("Confusion Matrix for Logistic Regression", fontsize = '12')
 plt.xlabel("Actual")
 plt.ylabel("Predicted")
-#plt.show()
+plt.show()
 
 #2. SVM
 from sklearn import svm
@@ -135,11 +137,13 @@ sVec.fit(X_train, y_train)
 #predicting
 y_pred = sVec.predict(X_test)
 conMat = confusion_matrix(y_test, y_pred)
+print("Accuracy of the SVM model:", (conMat[0][0] + conMat[1][1])/(conMat[0][0] + conMat[0][1] + conMat[1][0]+ conMat[1][1]) * 100)
+print()
 sns.heatmap(conMat, annot = True, annot_kws = {"size": 10})
 plt.suptitle("Confusion Matrix for Support Vector Machines", fontsize = '12')
 plt.xlabel("Actual")
 plt.ylabel("Predicted")
-#plt.show()
+plt.show()
 
 #3. Naive Bayes
 from sklearn.naive_bayes import GaussianNB
@@ -153,11 +157,13 @@ nBayes.fit(X_train, y_train)
 #predicting
 y_pred = nBayes.predict(X_test)
 conMat = confusion_matrix(y_test, y_pred)
+print("Accuracy of the Naive Bayes model:", (conMat[0][0] + conMat[1][1])/(conMat[0][0] + conMat[0][1] + conMat[1][0]+ conMat[1][1]) * 100)
+print()
 sns.heatmap(conMat, annot = True, annot_kws = {"size": 10})
 plt.suptitle("Confusion Matrix for Naive Bayes", fontsize = '12')
 plt.xlabel("Actual")
 plt.ylabel("Predicted")
-#plt.show()
+plt.show()
 
 #4. Decision Tree
 from sklearn.tree import DecisionTreeClassifier
@@ -171,31 +177,33 @@ decTree.fit(X_train, y_train)
 #predicting
 y_pred = decTree.predict(X_test)
 conMat = confusion_matrix(y_test, y_pred)
+print("Accuracy of the Decision Tree model:", (conMat[0][0] + conMat[1][1])/(conMat[0][0] + conMat[0][1] + conMat[1][0]+ conMat[1][1]) * 100)
+print()
 sns.heatmap(conMat, annot = True, annot_kws = {"size": 10})
 plt.suptitle("Confusion Matrix for Decision Tree", fontsize = '12')
 plt.xlabel("Actual")
 plt.ylabel("Predicted")
-#plt.show()
+plt.show()
 
 #calculating and plotting the importance of each variable
 
 #for logistic regression
 importance = reg.coef_[0]
 sns.barplot(x = importance, y = columnTitle[:13])
-sns.set(style="darkgrid")
+sns.set(style = "darkgrid")
 plt.suptitle("Feature importance for logistic regression")
-#plt.show()
+plt.show()
 
 #for SVM
 importance = sVec.coef_[0]
 sns.barplot(x = importance, y = columnTitle[:13])
-sns.set(style="darkgrid")
+sns.set(style = "darkgrid")
 plt.suptitle("Feature importance for Support Vector Machine")
 plt.show()
 
 #for decision trees
 importance = decTree.feature_importances_
 sns.barplot(x = importance, y = columnTitle[:13])
-sns.set(style="darkgrid")
+sns.set(style = "darkgrid")
 plt.suptitle("Feature importance for Decision Trees")
 plt.show()
