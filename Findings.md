@@ -68,7 +68,7 @@ Here, I get some interesting results. I see that after the age of 55 years, ther
 
 Next, I created a pie chart to see the relation between gender and being affected by a heart disease. 
 
-<img src = "/graphs/maleFemale.png" width = "750">
+<img src = "/graphs/maleFemale.png" width = "500">
 This shows that a majority of males are affected by heart diseases as compared to females. According to a [study done in 2016](https://www.health.harvard.edu/heart-health/throughout-life-heart-attacks-are-twice-as-common-in-men-than-women), "throughout life, men were about twice as likely as women to have a heart attack. That higher risk persisted even after they accounted for traditional risk factors for heart disease, including high cholesterol, high blood pressure, diabetes, body mass index, and physical activity. Earlier studies suggested that women's naturally occurring hormone levels might protect against heart disease before menopause, when hormone levels drop. However, the risk of heart attack changed only slightly as women transitioned through menopause, making it unlikely that female hormone levels explain these findings."
 
 Next, I plotted a boxen plot to see the cholesterol levels by age. 
