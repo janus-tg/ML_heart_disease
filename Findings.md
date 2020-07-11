@@ -23,14 +23,14 @@ This dataset consists of data from 303 people. All the columns of the dataset ar
 6. Fasting Blood Sugar: compares the fasting blood sugar value of an individual with 120mg/dl.
       - fasting blood sugar > 120mg/dl: 1 (true)
       - else: 0 (false)
-7. Resting ECG: electrocardiographic test results
+7. Resting ECG: electrocardiographic test results:
        - 0 = normal
        - 1 = ST-T wave abnormality
        - 2 = left ventricular hypertrophy
 8. Max heart rate: max heart rate achieved
 9. Exercise induced angina:
-        1 = yes
-        0 = no
+        - 1 = yes
+        - 0 = no
 10. ST depression induced by exercise relative to rest: displays the value which is an integer or float.
 11. Peak exercise ST segment:
         - 1 = upsloping
