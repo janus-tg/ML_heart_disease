@@ -51,6 +51,7 @@ I started by checking whether my data conatains any missing values. Here are the
 <img src = "/graphs/missing_data.png" width = "150">
 
 To fix these missing values in the vessels and thal columns, I used imputation and filled the missing values with the mean of the column. Since the dataset is not that big, I did not want to waste rows which were perfextly fine but just had 1 or 2 missing values. 
+Furthernore, for the 'Target' column, I replaced 2, 3, and 4 with 1 to indicate presence of heart disease as it would aid our analysis and ML model creation later on. 
 
 # Analysing the data
 
@@ -90,3 +91,9 @@ In the correlation matrix, a positive correlation between chest-pain type and be
 <img src = "/graphs/cpainTarget.png" width = "750">
  
 This gave us very interesting results. Firstly, we saw that people having any type of chest pain have a chance of being afflicted with a heart disease. Secondly, we saw that many people having asymptomatic chest pain were affected by heart disease. This means that the asymptomatic people were affected by [Silent Ischemia](https://www.texasheart.org/heart-health/heart-information-center/topics/silent-ischemia/). According to the Texas Heart Institute, heart muscle disease (cardiomyopathy) caused by silent ischemia is among the more common causes of heart failure in the United States which is corroborated by our data. 
+
+
+# Creating ML models for predicting heart disease
+
+
+
