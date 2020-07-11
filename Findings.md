@@ -59,3 +59,10 @@ I started by plotting a correlation matrix. This would enable me to observe whet
 
 <img src = "/graphs/correlationMatrix.png" width = "750">
 We observed that none of the parameters have especially strong positive or negative correlations with each other. ST Elevation, presence of thalassemia, affected blood vessels, chest pain type, age and sex show a weak positive correlation. 
+
+Next, I created a plot for comparing the number of people by each age who are affected by heart diseases. 
+
+<img src = "/graphs/Age&Target.png" width = "750">
+
+Here, I get some interesting results. I see that after the age of 55 years, there is a spike in number of people affected by heart diseases. I observed an upward trend from which I inferred that older people are more at risk for heart diseases. This finding is corroborated by lots of sources. Mayo Clinic states that "Men age 45 or older and women age 55 or older are more likely to have a heart attack than are younger men and women." Thus, age is a risk factor for heart diseases although we also see from our result that people even younger than that age group are susceptible to heart diseases. 
+
