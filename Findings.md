@@ -58,5 +58,4 @@ To fix these missing values in the vessels and thal columns, I used imputation a
 I started by plotting a correlation matrix. This would enable me to observe whether any of the parameters have a strong correlation with each other and further investigate it. 
 
 <img src = "/graphs/correlationMatrix.png" width = "750">
-
 We observed that none of the parameters have especially strong positive or negative correlations with each other. ST Elevation, presence of thalassemia, affected blood vessels, chest pain type, age and sex show a weak positive correlation. 
