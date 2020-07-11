@@ -48,4 +48,4 @@ This dataset consists of data from 303 people. All the columns of the dataset ar
       
 I started by checking whether my data conatains any missing values. Here are the results:
 
-<img src = "/graphs/missing data.png" width = "500">
+<img src = "/graphs/missing data.png" width = "750">
