@@ -78,6 +78,6 @@ Next, I plotted a boxen plot to see the cholesterol levels by age.
 
 Although a clear correlation was not seen here but a more disturbing fact was observed. I observed that after approximately the age of 37 years, the average cholesterol levels of the people was more than the recommended upper threshold of [200 mg/dl](https://medlineplus.gov/cholesterollevelswhatyouneedtoknow.html). This shows that most people led unhealthy lifestyles which contributed to their higher cholesterol. 
 
-Next, I plotted graphs for the blood vessels affected by heart disease compared to age and gender. 
+Next, I plotted graphs for the mean blood vessels affected by heart disease compared to age and gender. 
 
-<img src = "/graphs/vesselsAge.png" width = "500"> <img src = "/graphs/vesselSex.png" width = "500">
+<img src = "/graphs/vesselsAge.png" width = "750"> <img src = "/graphs/vesselSex.png" width = "500">
