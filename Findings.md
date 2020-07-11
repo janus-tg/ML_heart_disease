@@ -7,7 +7,7 @@ According to the W.H.O, heart diseases or Cardiovascular diseases are the **numb
 # Getting Started
 
 
-I am using the Cleveland Heart Disease data set which is available on the [UCI Machine Learning Repository] (https://archive.ics.uci.edu/ml/datasets/Heart+Disease)
+I am using the Cleveland Heart Disease data set which is available on the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Heart+Disease)
 This dataset consists of data from 303 people. All the columns of the dataset are described below:
 - Age: age of person in years.
 - Sex: gender of person:
