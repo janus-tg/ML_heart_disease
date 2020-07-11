@@ -26,7 +26,7 @@ df.columns = columnTitle
 # thal: thalassemia (3 = normal; 6 = fixed defect; 7 = reversible defect)
 # target: (1= heart disease or 0= no heart disease)
 
-#print(df.isnull().sum()) 
+print(df.isnull().sum()) 
 #checking for null values in the DataFrame.
 #4 NA values in vessel and 2 in thal column
 
@@ -95,6 +95,16 @@ plt.xlabel("Frequency")
 plt.ylabel("Gender")
 plt.yticks([0, 1], ["female", "male"])
 plt.legend(['fixed defect', 'reversible defect'], loc = "best")
+plt.show()
+
+#chest pain type vs target
+sns.catplot(x = "cPain", hue = "target", data = df, kind = 'count', legend = False, palette = 'dark')
+sns.set_style('dark')
+plt.legend(['No heart disease', 'Heart Disease'], loc = "best")
+plt.xticks([0, 1, 2, 3], ['typical angina', 'atypical angina', 'non-anginal pain', 'asymptomatic'])
+plt.suptitle("Relationship between chest-pain type and people affected by heart disease", fontsize = '12')
+plt.ylabel("Frequency")
+plt.xlabel("Chest-pain type")
 plt.show()
 
 #making the predictive algorithms using the scikitLearn module
