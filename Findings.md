@@ -17,7 +17,7 @@ This dataset consists of data from 303 people. All the columns of the dataset ar
       - 1 = typical angina
       - 2 = atypical angina
       - 3 = non-anginal pain
-      - 4 = asymptotic
+      - 4 = asymptomatic
 4. Resting Blood Pressure: resting blood pressure value of an individual in mmHg
 5. Serum Cholestrol: serum cholesterol in mg/dl
 6. Fasting Blood Sugar: compares the fasting blood sugar value of an individual with 120mg/dl.
