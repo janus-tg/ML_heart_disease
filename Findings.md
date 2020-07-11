@@ -24,9 +24,9 @@ This dataset consists of data from 303 people. All the columns of the dataset ar
       - fasting blood sugar > 120mg/dl: 1 (true)
       - else: 0 (false)
 7. Resting ECG: electrocardiographic test results:
-       - 0 = normal
-       - 1 = ST-T wave abnormality
-       - 2 = left ventricular hypertrophy
+       * 0 = normal
+       * 1 = ST-T wave abnormality
+       * 2 = left ventricular hypertrophy
 8. Max heart rate: max heart rate achieved
 9. Exercise induced angina:
         - 1 = yes
