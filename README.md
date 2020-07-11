@@ -34,10 +34,10 @@ A python program which used data analysis techniques to observe trends between v
 
 ## Models used:
 
-1. Logistic Regression
-2. Support Vector MAchine (SVM)
-3. Gaussian Naive Bayes
-4. Decision Trees
+1. [Logistic Regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html)
+2. [Support Vector Machine (SVM)](https://scikit-learn.org/stable/modules/svm.html)
+3. [Gaussian Naive Bayes](https://scikit-learn.org/stable/modules/naive_bayes.html)
+4. [Decision Trees](https://scikit-learn.org/stable/modules/tree.html)
 
 
 ## Contributing
