@@ -31,6 +31,15 @@ A python program which used data analysis techniques to observe trends between v
 2. Create a new project, copy the ```heart_disease.py``` code and paste it in a ```.py``` file.
 3. Run the program.
 
+
+## Models used:
+
+1. Logistic Regression
+2. Support Vector MAchine (SVM)
+3. Gaussian Naive Bayes
+4. Decision Trees
+
+
 ## Contributing
 
 Pull requests are welcome for adding more ML models or fixing exisiting issues. 
