@@ -50,4 +50,13 @@ I started by checking whether my data conatains any missing values. Here are the
 
 <img src = "/graphs/missing_data.png" width = "150">
 
-To fix these missing values, I used imputation and filled the missing values with the mean of the column. Since the dataset is not that big, I did not want to waste rows which were perfextly fine but just had 1 or 2 missing values. 
+To fix these missing values in the vessels and thal columns, I used imputation and filled the missing values with the mean of the column. Since the dataset is not that big, I did not want to waste rows which were perfextly fine but just had 1 or 2 missing values. 
+
+# Analysing the data
+
+
+I started by plotting a correlation matrix. This would enable me to observe whether any of the parameters have a strong correlation with each other and further investigate it. 
+
+<img src = "/graphs/correlationMatrix.png" width = "750">
+
+We observed that none of the parameters have especially strong positive or negative correlations with each other. ST Elevation, presence of thalassemia, affected blood vessels, chest pain type, age and sex show a weak positive correlation. 
