@@ -80,4 +80,4 @@ Although a clear correlation was not seen here but a more disturbing fact was ob
 
 Next, I plotted graphs for the mean blood vessels affected by heart disease compared to age and gender. 
 
-<img src = "/graphs/vesselsAge.png" width = "700"> <img src = "/graphs/vesselSex.png" width = "300">
+<img src = "/graphs/vesselsAge.png" width = "680"> <img src = "/graphs/vesselSex.png" width = "320">
