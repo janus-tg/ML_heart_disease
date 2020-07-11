@@ -83,3 +83,4 @@ Next, I plotted graphs for the mean blood vessels affected by heart disease comp
 <img src = "/graphs/vesselsAge.png" width = "680"><img src = "/graphs/vesselSex.png" width = "320">
 
 We see that there is a weak upward trend starting from the age of 40 years. This shows that more people aged >= 40 years have got affected blood vessels and thus affected by a heart disease called [Atherosclerosis](https://www.mayoclinic.org/diseases-conditions/arteriosclerosis-atherosclerosis/symptoms-causes/syc-20350569#:~:text=Atherosclerosis%20refers%20to%20the%20buildup,arteries%20anywhere%20in%20your%20body.) and this also complements our earlier finding that older people are more at risk for heart diseases. 
+The mean blood vessels of men is 0.7 as compared to 0.55 for women. Although the difference is not large, it still complements our earlier finding that men are more at risk than females for heart diseases.
