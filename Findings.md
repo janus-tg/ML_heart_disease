@@ -89,3 +89,4 @@ In the correlation matrix, a positive correlation between chest-pain type and be
 
 <img src = "/graphs/cpainTarget.png" width = "750">
  
+This gave us very interesting results. Firstly, we saw that people having any type of chest pain have a chance of being afflicted with a heart disease. Secondly, we saw that many people having asymptomatic chest pain were affected by heart disease. This means that the asymptomatic people were affected by [Silent Ischemia](https://www.texasheart.org/heart-health/heart-information-center/topics/silent-ischemia/). According to the Texas Heart Institute, heart muscle disease (cardiomyopathy) caused by silent ischemia is among the more common causes of heart failure in the United States which is corroborated by our data. 
