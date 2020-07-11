@@ -9,6 +9,7 @@ According to the W.H.O, heart diseases or Cardiovascular diseases are the **numb
 
 I am using the Cleveland Heart Disease data set which is available on the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Heart+Disease)
 This dataset consists of data from 303 people. All the columns of the dataset are described below:
+
 1. Age: age of person in years.
 2. Sex: gender of person:
       - 1 = male
@@ -44,3 +45,7 @@ This dataset consists of data from 303 people. All the columns of the dataset ar
 14. Diagnosis of heart disease:
       - 0 = absence
       - 1, 2, 3, 4 = present.
+      
+I started by checking whether my data conatains any missing values. Here are the results:
+
+<img source = "missing data.png">
