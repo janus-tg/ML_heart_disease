@@ -24,23 +24,23 @@ This dataset consists of data from 303 people. All the columns of the dataset ar
       - fasting blood sugar > 120mg/dl: 1 (true)
       - else: 0 (false)
 7. Resting ECG: electrocardiographic test results:
-       * 0 = normal
-       * 1 = ST-T wave abnormality
-       * 2 = left ventricular hypertrophy
+      - 0 = normal
+      - 1 = ST-T wave abnormality
+      - 2 = left ventricular hypertrophy
 8. Max heart rate: max heart rate achieved
 9. Exercise induced angina:
-        - 1 = yes
-        - 0 = no
+      - 1 = yes
+      - 0 = no
 10. ST depression induced by exercise relative to rest: displays the value which is an integer or float.
 11. Peak exercise ST segment:
-        - 1 = upsloping
-        - 2 = flat
-        - 3 = downsloping
+       - 1 = upsloping
+       - 2 = flat
+       - 3 = downsloping
 12. Number of major vessels (0–3) colored by flourosopy : indicates number of blood vessels affected.
 13. Thalassemia:
-        - 3 = normal
-        - 6 = fixed defect
-        - 7 = reversible defect
+      - 3 = normal
+      - 6 = fixed defect
+      - 7 = reversible defect
 14. Diagnosis of heart disease:
-        - 0 = absence
-        - 1, 2, 3, 4 = present.
+      - 0 = absence
+      - 1, 2, 3, 4 = present.
