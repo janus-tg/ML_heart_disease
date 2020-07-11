@@ -48,4 +48,6 @@ This dataset consists of data from 303 people. All the columns of the dataset ar
       
 I started by checking whether my data conatains any missing values. Here are the results:
 
-<img src = "/graphs/missing data.png" width = "750">
+<img src = "/graphs/missing data.png" width = "1000">
+
+To fix these missing values, I used imputation and filled the missing values with the mean of the column. Since the dataset is not that big, I did not want to waste rows which were perfextly fine but just had 1 or 2 missing values. 
