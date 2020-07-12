@@ -138,8 +138,11 @@ In this project, the decision tree starts with 2 burst nodes indicating whether 
 <img src = "/accuracy/DT.png" width = "500">
 
 
-Based on all these models, it is seen that the **logistic regression model is the most accurate** amongst the bunch having an **accuracy of 86.885 %**.
+Based on all these models, it is seen that the **logistic regression model is the most accurate** amongst the bunch having an **accuracy of 86.885%**.
 
 
 # Feature importance and going forward
+
+
+An important step in making even more accurate models would be using feature importance. Feature importance is a method using which we can assign importance to each parameter and select the most important parameters or weigh them accordingly. Here are the bar plots of relative feature importance:
 
