@@ -149,3 +149,6 @@ An important step in making even more accurate models would be using feature imp
 
 <img src = "/graphs/impLogReg.png" width = "333"><img src = "/graphs/impSVM.png" width = "333"><img src = "/graphs/impDecTrees.png" width = "333">
 
+
+We see that some features like number of vessels colored by fluoroscopy, presence of thalassemia, ST elevation, chest pain and gender standout and are more important the others. I believe that weighing these parameters will help in creating even more accurate models to predict heart diseases. 
+
