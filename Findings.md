@@ -136,3 +136,10 @@ In this project, the decision tree starts with 2 burst nodes indicating whether 
 
 <img src = "/graphs/decisionTree.png" width = "500"> 
 <img src = "/accuracy/DT.png" width = "500">
+
+
+Based on all these models, it is seen that the **logistic regression model is the most accurate** amongst the bunch having an **accuracy of 86.885 %**.
+
+
+# Feature importance and going forward
+
