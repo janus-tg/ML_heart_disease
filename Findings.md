@@ -121,12 +121,16 @@ A confusion matrix will be plotted to check for the accuracy of each model.
 ### 3. Gaussian Naive Bayes
 
 
+[Naive Bayes](https://en.wikipedia.org/wiki/Naive_Bayes_classifier#Gaussian_na%C3%AFve_Bayes) is a probabilistic classifier which is based on the application of the [Bayes Theorem](https://en.wikipedia.org/wiki/Bayes%27_theorem) and assuming that all the parameters are independant of each other. Gaussian Naive Bayes is based on the fact that all the continous values associated with each parameter are distributed by a normal distribution. 
+
 <img src = "/graphs/naiveBayes.png" width = "500"> 
 <img src = "/accuracy/NB.png" width = "500">
 
 
-### 4. Decision Trees
+### 4. Decision Tree
 
+
+[Decision Tree](https://en.wikipedia.org/wiki/Decision_tree#Overview) is 
 
 <img src = "/graphs/decisionTree.png" width = "500"> 
 <img src = "/accuracy/DT.png" width = "500">
