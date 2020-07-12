@@ -146,3 +146,6 @@ Based on all these models, it is seen that the **logistic regression model is th
 
 An important step in making even more accurate models would be using feature importance. Feature importance is a method using which we can assign importance to each parameter and select the most important parameters or weigh them accordingly. Here are the bar plots of relative feature importance:
 
+
+<img src = "/graphs/impLogReg.png" width = "333"><img src = "/graphs/impSVM.png" width = "333"><img src = "/graphs/impDecTrees.png" width = "333">
+
