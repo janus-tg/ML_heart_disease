@@ -103,3 +103,4 @@ A confusion matrix will be plotted to check for the accuracy of each model.
 ### 1. Logistic Regression 
 
 
+<img src = "/garphs/logReg.png" width = 500>
