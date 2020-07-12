@@ -96,4 +96,10 @@ This gave us very interesting results. Firstly, we saw that people having any ty
 # Creating ML models for predicting heart disease
 
 
+I used the scikit-learn module for making the models. First I began by splitting the dataset into 2 sets: training and testing. The training set was allocated 80% of the data and the remaining 20% of the data was alloted to the testing set. The testing set will be used to predict values using the models and that will be compared to the actual values. This will be further used to calculate the accuracy of our model. 
+
+A confusion matrix will be plotted to check for the accuracy of each model. 
+
+### 1. Logistic Regression 
+
 
