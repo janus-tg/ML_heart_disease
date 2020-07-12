@@ -105,3 +105,24 @@ A confusion matrix will be plotted to check for the accuracy of each model.
 
 <img src = "/graphs/logReg.png" width = "500"> 
 <img src = "/accuracy/LR.png" width = "500">
+
+
+### 2. Support Vector Machine (SVM)
+
+
+<img src = "/graphs/svm.png" width = "500"> 
+<img src = "/accuracy/SVM.png" width = "500">
+
+
+### 3. Gaussian Naive Bayes
+
+
+<img src = "/graphs/naiveBayes.png" width = "500"> 
+<img src = "/accuracy/NB.png" width = "500">
+
+
+### 4. Decision Trees
+
+
+<img src = "/graphs/decisionTree.png" width = "500"> 
+<img src = "/accuracy/DT.png" width = "500">
