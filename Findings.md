@@ -105,7 +105,7 @@ A confusion matrix will be plotted to check for the accuracy of each model.
 
 [Logistic regression](https://en.wikipedia.org/wiki/Logistic_regression) is a statistical model that utilizes a logistic function to predict the outcome based on the parameters. In this case, we are using a binary logistic regression as the aim is to predict whether a person has heart disease (1) or is not (0). 
 
-<img src = "/graphs/logReg.png" width = "500"> 
+<img src = "/graphs/logReg.png" width = "400"> 
 <img src = "/accuracy/LR.png" width = "500">
 
 
@@ -114,7 +114,7 @@ A confusion matrix will be plotted to check for the accuracy of each model.
 
 [SVM](https://en.wikipedia.org/wiki/Support_vector_machine) is essentially a classification algorithm. It takes the input and divides them using a hyperplane. This hyperplane is called the decision boundary. In this project, anything that falls into one side of the decision line is categorised as a person having heart disease (1) or is not having heart disease (0). 
 
-<img src = "/graphs/svm.png" width = "500"> 
+<img src = "/graphs/svm.png" width = "400"> 
 <img src = "/accuracy/SVM.png" width = "500">
 
 
@@ -123,7 +123,7 @@ A confusion matrix will be plotted to check for the accuracy of each model.
 
 [Naive Bayes](https://en.wikipedia.org/wiki/Naive_Bayes_classifier#Gaussian_na%C3%AFve_Bayes) is a probabilistic classifier which is based on the application of the [Bayes Theorem](https://en.wikipedia.org/wiki/Bayes%27_theorem) and assuming that all the parameters are independant of each other. Gaussian Naive Bayes is based on the fact that all the continous values associated with each parameter are distributed by a normal distribution. 
 
-<img src = "/graphs/naiveBayes.png" width = "500"> 
+<img src = "/graphs/naiveBayes.png" width = "400"> 
 <img src = "/accuracy/NB.png" width = "500">
 
 
@@ -134,7 +134,7 @@ A confusion matrix will be plotted to check for the accuracy of each model.
 In this project, the decision tree starts with 2 burst nodes indicating whether a person has heart disease (1) or does not (0). The subsequent nodes are based on the other 13 parameters which influence whether a person has heart disease or not. 
 
 
-<img src = "/graphs/decisionTree.png" width = "500"> 
+<img src = "/graphs/decisionTree.png" width = "400"> 
 <img src = "/accuracy/DT.png" width = "500">
 
 
