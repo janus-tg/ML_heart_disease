@@ -130,7 +130,9 @@ A confusion matrix will be plotted to check for the accuracy of each model.
 ### 4. Decision Tree
 
 
-[Decision Tree](https://en.wikipedia.org/wiki/Decision_tree#Overview) is 
+[Decision Tree](https://en.wikipedia.org/wiki/Decision_tree#Overview) uses a tree-like model of decisions, with subsequent nodes having their outcomes and probabilities. 
+In this project, the decision tree starts with 2 burst nodes indicating whether a person has heart disease (1) or does not (0). The subsequent nodes are based on the other 13 parameters which influence whether a person has heart disease or not. 
+
 
 <img src = "/graphs/decisionTree.png" width = "500"> 
 <img src = "/accuracy/DT.png" width = "500">
