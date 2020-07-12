@@ -1,6 +1,6 @@
 # Data analysis and Machine Learning models to predict heart disease
 
-A python program which used data analysis techniques to observe trends between various risk factors for heart diseases. Then, machine leaning models were created to predict whether a person has heart disease based on those risk factors. See my [findings here](https://github.com/janus-tg/ML_heart_disease/blob/master/Findings.md)!
+A python program which used data analysis techniques to observe trends between various risk factors for heart diseases. Then, machine leaning models were created to predict whether a person has heart disease based on those risk factors. See my [findings here](https://medium.com/@janus_tg/data-analysis-and-machine-learning-models-to-predict-heart-disease-ea3b6afd7f8d)!
 
 
 <img src="heart_illustration.jpg" width="750">
