@@ -18,7 +18,7 @@ A python3 program which used data analysis techniques to observe trends between 
     - scikit-learn
 
 
-## Running the program
+### Running the program
 
 1. Download the ```cleveland.csv``` file and ```heart_disease.py``` files.
 2. Place them inside the same folder.
